@@ -20,10 +20,10 @@ console.log(products);
 //Output: "Laptop", "Phone", "Headphones", "Monitor", "Case"
 
 //Update Product Information
-function updateProductName(productName) {
-  products.push(productName);
+function updateProductName(index, newName) {
+  products[index] = newName;
 }
-products[1] = "Pager";
+updateProductName(1, "Pager");
 console.log(products); 
 //Output: "Laptop", "Pager", "Headphones", "Monitor", "Case";
 
